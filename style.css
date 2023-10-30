@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.dot{
+    /* border: 1px dotted red; */
+}
+
+.flex{
+    display: flex;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    text-align: center; 
+    position: relative;
+}
+
+.header{
+    height: 30vh;
+    background: url('./images/pattern-bg-desktop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.header > h1{
+    padding: 1em 0px;
+    font-weight: lighter;
+}
+
+.input-box{
+    justify-content: center;
+    height: 2.5em;
+}
+
+.input-box > input[type="text"]{
+    min-width: 40%;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+.input-box > input[type="text"]:focus{
+    outline: none;
+}
+
+.input-box > input[type="button"]{
+    width: 3em;
+    border: none;
+    color: #fff;
+    background: #000;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+.details{
+    justify-content: center;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 99;
+    border-radius: 10px;
+    padding: 1em;
+    gap: 1em;
+    background: #fff;
+    max-width: 800px;
+}
+
+.item-detail{
+    padding-right: 1em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    border-right: 1px solid #000;
+}
+
+.item-detail > p{
+    font-size: 1em;
+    text-transform: uppercase;
+    color: grey;
+    letter-spacing: 2px;
+}
+
+.item-detail:nth-of-type(4){
+    border: none;
+    text-transform: capitalize;
+}
+
+#map{
+    z-index: 1;
+    height: 70%;
+}
+
+
+
+@media(max-width: 760px){
+
+    .input-box > input[type="text"]{
+        width: 80%;
+    }
+
+.details{
+    flex-direction: column;
+    max-width: 75%;
+
+}
+
+    .item-detail{
+        border: none;
+    }
+
+}
