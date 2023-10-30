@@ -31,7 +31,8 @@ main{
 }
 
 .header{
-    height: 30vh;
+    min-height: 12em;
+    height: 30%;
     background: url('./images/pattern-bg-desktop.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -74,7 +75,7 @@ main{
 .details{
     justify-content: center;
     position: absolute;
-    top: 25%;
+    top: 10em;
     left: 0;
     right:0;
     margin-left: auto;
