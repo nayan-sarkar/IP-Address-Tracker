@@ -14,7 +14,7 @@ const ISPel = document.getElementById("isp");
 
 let map;
 
-fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=${API_KEY}&domain=${inputTextEl.value}`)
+fetch(`/.netlify/functions/fetch-map?domain=${inputTextEl.value}`)
         .then(res=>res.json())
         .then(data=>{
             console.log(data);
@@ -32,7 +32,7 @@ fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=${API_KEY}&domain=${inpu
         .catch(e=>alert(e));
 
 buttonEl.addEventListener('click',function(){
-        fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=${API_KEY}&domain=${inputTextEl.value}`)
+    fetch(`/.netlify/functions/fetch-map?domain=${inputTextEl.value}`)
         .then(res=>res.json())
         .then(data=>{
             console.log(data);
