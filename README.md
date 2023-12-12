@@ -2,6 +2,9 @@
 
 ![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)
 
+## Site Deploy Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/637ee824-a16e-4725-b3b9-87bc208d9595/deploy-status)](https://app.netlify.com/sites/fmc-ip-address-tracker/deploys)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
